@@ -1,0 +1,48 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  background: black;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.block {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  animation:
+    rotate 4s infinite,
+    color 32s infinite;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes color {
+  0%   { background-color: hsla(0,   80%, 45%, 1); }
+  10%  { background-color: hsla(36,  80%, 45%, 1); }
+  20%  { background-color: hsla(72,  80%, 45%, 1); }
+  30%  { background-color: hsla(108, 80%, 45%, 1); }
+  40%  { background-color: hsla(144, 80%, 45%, 1); }
+  50%  { background-color: hsla(180, 80%, 45%, 1); }
+  60%  { background-color: hsla(216, 80%, 45%, 1); }
+  70%  { background-color: hsla(252, 80%, 45%, 1); }
+  80%  { background-color: hsla(288, 80%, 45%, 1); }
+  90%  { background-color: hsla(324, 80%, 45%, 1); }
+  100% { background-color: hsla(360, 80%, 45%, 1); }
+}
